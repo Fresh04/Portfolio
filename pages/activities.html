@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activities</title>
+  <link href="../assets/css/styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app-header"></div>
+  <main class="wrap">
+    <section>
+      <h2>Activities</h2>
+      <p class="section-note">Live runs/rides and lifetime stats from Strava via a secure Vercel proxy.</p>
+      <div class="grid" id="activityGrid" aria-live="polite"></div>
+      <div id="stats" style="margin-top:16px"></div>
+    </section>
+  </main>
+  <div id="app-footer"></div>
+  <script src="../assets/js/theme.js" defer></script>
+  <script src="../assets/js/shell.js" defer></script>
+  <script src="../assets/js/strava.js" defer></script>
+</body>
+</html>
