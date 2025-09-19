@@ -46,7 +46,7 @@ module.exports = async (req, res) => {
     const bestForDistance = (meters, pct = 0.015) => {
       const lo = meters * (1 - pct);
       const hi = meters * (1 + pct);
-      const candidates = runs.filter(a => a.distance >= lo && a.distance <= hi && a.moving_time > 0);
+      const candidates = runs.filter(a => a.distance >= lo && a.moving_time > 0);
       if (!candidates.length) return null;
       const best = candidates.reduce((acc, a) => (a.moving_time < acc.moving_time ? a : acc), candidates[0]);
       return { seconds: best.moving_time, activity_id: best.id, when: best.start_date };
