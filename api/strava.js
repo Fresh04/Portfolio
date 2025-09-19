@@ -54,8 +54,8 @@ module.exports = async (req, res) => {
 
     const pb5k  = bestForDistance(5000);
     const pb10k = bestForDistance(10000);
-    const pbHM  = bestForDistance(21097.5, 0.02); 
-    const pbFM  = bestForDistance(42195, 0.02);   
+    const pbHM  = bestForDistance(21100); 
+    const pbFM  = bestForDistance(42200);   
 
     const recentRunIds = runs.slice(0, 25).map(a => a.id);
     let pb1k = null;
