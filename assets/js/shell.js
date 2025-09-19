@@ -20,7 +20,7 @@
   const footerHTML = `
   <footer>
     <div class="wrap spaced">
-      <div>© <span id="y"></span> You. Content under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noreferrer noopener">CC BY‑NC 4.0</a>.</div>
+      <div>© <span id="y"></span> Fresh. Content under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noreferrer noopener">CC BY‑NC 4.0</a>.</div>
       <div class="mono">© 2025 fresh · Built to stay fresh.</div>
     </div>
   </footer>`;

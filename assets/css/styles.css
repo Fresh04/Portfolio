@@ -85,3 +85,68 @@ main {
   flex: 1; 
   display: block;
 }
+
+/* ===== Vertical Timeline Styles ===== */
+.timeline-v {
+  position: relative;
+  margin: 0;
+  padding: 4px 0 4px 24px;
+  list-style: none;
+}
+.timeline-v::before {
+  content: "";
+  position: absolute;
+  left: 10px; top: 0; bottom: 0;
+  width: 2px;
+  background: color-mix(in oklab, var(--muted, #9aa0a6) 55%, transparent);
+}
+.tlv-item {
+  position: relative;
+  margin: 0 0 18px 0;
+}
+.tlv-dot {
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 16px; height: 16px;
+  background: var(--accent);
+  border: 2px solid var(--card);
+  border-radius: 999px;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 35%, transparent);
+}
+.tlv-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+.tlv-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.tlv-role {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.tlv-org {
+  color: var(--text);
+  font-weight: 500;
+}
+.tlv-date {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: .9rem;
+  font-variant-numeric: tabular-nums;
+}
+.tlv-desc {
+  margin: 0;
+  color: var(--muted);
+}
+.timeline-v > .tlv-item:last-child { margin-bottom: 0; }
+
+:root[data-theme="light"] .tlv-card { background: #fff; }
+:root[data-theme="light"] .tlv-dot { border-color: #fff; }

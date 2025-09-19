@@ -87,7 +87,7 @@ module.exports = async (req, res) => {
       total_elevation_gain: a.total_elevation_gain,
     });
 
-    const latestTwo = activities.slice(0, 2).map(trim);
+    const latestTwo = activities.slice(0, 6).map(trim);
 
     const km = (m) => (m || 0) / 1000;
 
